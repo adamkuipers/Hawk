@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FA900E0D1C0841BA00AA1220 /* Hawk.h in Headers */ = {isa = PBXBuildFile; fileRef = FA900E0C1C0841BA00AA1220 /* Hawk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA900E141C0841BA00AA1220 /* Hawk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA900E091C0841BA00AA1220 /* Hawk.framework */; };
-		FA900E191C0841BA00AA1220 /* HawkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E181C0841BA00AA1220 /* HawkTests.swift */; };
 		FA900E241C08423E00AA1220 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E231C08423E00AA1220 /* Money.swift */; };
 		FA900E261C08E9C100AA1220 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E251C08E9C100AA1220 /* Currency.swift */; };
 		FA900E281C08EBBA00AA1220 /* CurrencyExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E271C08EBBA00AA1220 /* CurrencyExchangeRate.swift */; };
@@ -35,7 +34,6 @@
 		FA900E0C1C0841BA00AA1220 /* Hawk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hawk.h; sourceTree = "<group>"; };
 		FA900E0E1C0841BA00AA1220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA900E131C0841BA00AA1220 /* Hawk.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hawk.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA900E181C0841BA00AA1220 /* HawkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawkTests.swift; sourceTree = "<group>"; };
 		FA900E1A1C0841BA00AA1220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA900E231C08423E00AA1220 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		FA900E251C08E9C100AA1220 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 		FA900E171C0841BA00AA1220 /* HawkTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA900E181C0841BA00AA1220 /* HawkTests.swift */,
 				FA900E1A1C0841BA00AA1220 /* Info.plist */,
 			);
 			path = HawkTests;
@@ -249,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA900E191C0841BA00AA1220 /* HawkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MoneyTests/Info.plist;
+				INFOPLIST_FILE = HawkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamkuipers.MoneyTests;
 				PRODUCT_NAME = Hawk;
@@ -441,7 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MoneyTests/Info.plist;
+				INFOPLIST_FILE = HawkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamkuipers.MoneyTests;
 				PRODUCT_NAME = Hawk;

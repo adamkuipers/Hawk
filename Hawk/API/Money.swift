@@ -1,6 +1,6 @@
 //
 //  Money.swift
-//  Money
+//  Hawk
 //
 //  Created by Adam Kuipers on 11/26/15.
 //  Copyright © 2015 Adam Kuipers. All rights reserved.
