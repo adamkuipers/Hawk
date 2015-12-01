@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA900E0D1C0841BA00AA1220 /* Money.h in Headers */ = {isa = PBXBuildFile; fileRef = FA900E0C1C0841BA00AA1220 /* Money.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA900E141C0841BA00AA1220 /* Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA900E091C0841BA00AA1220 /* Money.framework */; };
-		FA900E191C0841BA00AA1220 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E181C0841BA00AA1220 /* MoneyTests.swift */; };
+		FA900E0D1C0841BA00AA1220 /* Hawk.h in Headers */ = {isa = PBXBuildFile; fileRef = FA900E0C1C0841BA00AA1220 /* Hawk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA900E141C0841BA00AA1220 /* Hawk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA900E091C0841BA00AA1220 /* Hawk.framework */; };
+		FA900E191C0841BA00AA1220 /* HawkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E181C0841BA00AA1220 /* HawkTests.swift */; };
+		FA900E241C08423E00AA1220 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E231C08423E00AA1220 /* Money.swift */; };
+		FA900E261C08E9C100AA1220 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E251C08E9C100AA1220 /* Currency.swift */; };
+		FA900E281C08EBBA00AA1220 /* CurrencyExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E271C08EBBA00AA1220 /* CurrencyExchangeRate.swift */; };
+		FA900E2D1C0903CC00AA1220 /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E2C1C0903CC00AA1220 /* Currencies.swift */; };
+		FA900E2F1C09091F00AA1220 /* CurrencyExchangeRateImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E2E1C09091F00AA1220 /* CurrencyExchangeRateImplementation.swift */; };
+		FA900E311C09093600AA1220 /* MoneyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E301C09093600AA1220 /* MoneyImplementation.swift */; };
+		FA900E331C09116900AA1220 /* UnderlyingMoneyRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E321C09116900AA1220 /* UnderlyingMoneyRepresentation.swift */; };
+		FA900E351C09186300AA1220 /* MoneyDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900E341C09186300AA1220 /* MoneyDecimalNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +31,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA900E091C0841BA00AA1220 /* Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA900E0C1C0841BA00AA1220 /* Money.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
+		FA900E091C0841BA00AA1220 /* Hawk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hawk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA900E0C1C0841BA00AA1220 /* Hawk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hawk.h; sourceTree = "<group>"; };
 		FA900E0E1C0841BA00AA1220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA900E131C0841BA00AA1220 /* MoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA900E181C0841BA00AA1220 /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		FA900E131C0841BA00AA1220 /* Hawk.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hawk.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA900E181C0841BA00AA1220 /* HawkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawkTests.swift; sourceTree = "<group>"; };
 		FA900E1A1C0841BA00AA1220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA900E231C08423E00AA1220 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		FA900E251C08E9C100AA1220 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		FA900E271C08EBBA00AA1220 /* CurrencyExchangeRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeRate.swift; sourceTree = "<group>"; };
+		FA900E2C1C0903CC00AA1220 /* Currencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
+		FA900E2E1C09091F00AA1220 /* CurrencyExchangeRateImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeRateImplementation.swift; sourceTree = "<group>"; };
+		FA900E301C09093600AA1220 /* MoneyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyImplementation.swift; sourceTree = "<group>"; };
+		FA900E321C09116900AA1220 /* UnderlyingMoneyRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlyingMoneyRepresentation.swift; sourceTree = "<group>"; };
+		FA900E341C09186300AA1220 /* MoneyDecimalNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDecimalNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA900E141C0841BA00AA1220 /* Money.framework in Frameworks */,
+				FA900E141C0841BA00AA1220 /* Hawk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +69,8 @@
 		FA900DFF1C0841BA00AA1220 = {
 			isa = PBXGroup;
 			children = (
-				FA900E0B1C0841BA00AA1220 /* Money */,
-				FA900E171C0841BA00AA1220 /* MoneyTests */,
+				FA900E0B1C0841BA00AA1220 /* Hawk */,
+				FA900E171C0841BA00AA1220 /* HawkTests */,
 				FA900E0A1C0841BA00AA1220 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,28 +78,44 @@
 		FA900E0A1C0841BA00AA1220 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA900E091C0841BA00AA1220 /* Money.framework */,
-				FA900E131C0841BA00AA1220 /* MoneyTests.xctest */,
+				FA900E091C0841BA00AA1220 /* Hawk.framework */,
+				FA900E131C0841BA00AA1220 /* Hawk.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA900E0B1C0841BA00AA1220 /* Money */ = {
+		FA900E0B1C0841BA00AA1220 /* Hawk */ = {
 			isa = PBXGroup;
 			children = (
-				FA900E0C1C0841BA00AA1220 /* Money.h */,
+				FA900E2B1C09039F00AA1220 /* Implementations */,
 				FA900E0E1C0841BA00AA1220 /* Info.plist */,
+				FA900E0C1C0841BA00AA1220 /* Hawk.h */,
+				FA900E251C08E9C100AA1220 /* Currency.swift */,
+				FA900E271C08EBBA00AA1220 /* CurrencyExchangeRate.swift */,
+				FA900E231C08423E00AA1220 /* Money.swift */,
+				FA900E321C09116900AA1220 /* UnderlyingMoneyRepresentation.swift */,
 			);
-			path = Money;
+			path = Hawk;
 			sourceTree = "<group>";
 		};
-		FA900E171C0841BA00AA1220 /* MoneyTests */ = {
+		FA900E171C0841BA00AA1220 /* HawkTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA900E181C0841BA00AA1220 /* MoneyTests.swift */,
+				FA900E181C0841BA00AA1220 /* HawkTests.swift */,
 				FA900E1A1C0841BA00AA1220 /* Info.plist */,
 			);
-			path = MoneyTests;
+			path = HawkTests;
+			sourceTree = "<group>";
+		};
+		FA900E2B1C09039F00AA1220 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				FA900E2C1C0903CC00AA1220 /* Currencies.swift */,
+				FA900E2E1C09091F00AA1220 /* CurrencyExchangeRateImplementation.swift */,
+				FA900E301C09093600AA1220 /* MoneyImplementation.swift */,
+				FA900E341C09186300AA1220 /* MoneyDecimalNumber.swift */,
+			);
+			path = Implementations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,16 +125,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA900E0D1C0841BA00AA1220 /* Money.h in Headers */,
+				FA900E0D1C0841BA00AA1220 /* Hawk.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		FA900E081C0841BA00AA1220 /* Money */ = {
+		FA900E081C0841BA00AA1220 /* Hawk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA900E1D1C0841BA00AA1220 /* Build configuration list for PBXNativeTarget "Money" */;
+			buildConfigurationList = FA900E1D1C0841BA00AA1220 /* Build configuration list for PBXNativeTarget "Hawk" */;
 			buildPhases = (
 				FA900E041C0841BA00AA1220 /* Sources */,
 				FA900E051C0841BA00AA1220 /* Frameworks */,
@@ -113,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = Money;
+			name = Hawk;
 			productName = Money;
-			productReference = FA900E091C0841BA00AA1220 /* Money.framework */;
+			productReference = FA900E091C0841BA00AA1220 /* Hawk.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FA900E121C0841BA00AA1220 /* MoneyTests */ = {
+		FA900E121C0841BA00AA1220 /* HawkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA900E201C0841BA00AA1220 /* Build configuration list for PBXNativeTarget "MoneyTests" */;
+			buildConfigurationList = FA900E201C0841BA00AA1220 /* Build configuration list for PBXNativeTarget "HawkTests" */;
 			buildPhases = (
 				FA900E0F1C0841BA00AA1220 /* Sources */,
 				FA900E101C0841BA00AA1220 /* Frameworks */,
@@ -131,9 +163,9 @@
 			dependencies = (
 				FA900E161C0841BA00AA1220 /* PBXTargetDependency */,
 			);
-			name = MoneyTests;
+			name = HawkTests;
 			productName = MoneyTests;
-			productReference = FA900E131C0841BA00AA1220 /* MoneyTests.xctest */;
+			productReference = FA900E131C0841BA00AA1220 /* Hawk.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA900E031C0841BA00AA1220 /* Build configuration list for PBXProject "Money" */;
+			buildConfigurationList = FA900E031C0841BA00AA1220 /* Build configuration list for PBXProject "Hawk" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -166,8 +198,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA900E081C0841BA00AA1220 /* Money */,
-				FA900E121C0841BA00AA1220 /* MoneyTests */,
+				FA900E081C0841BA00AA1220 /* Hawk */,
+				FA900E121C0841BA00AA1220 /* HawkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA900E2D1C0903CC00AA1220 /* Currencies.swift in Sources */,
+				FA900E331C09116900AA1220 /* UnderlyingMoneyRepresentation.swift in Sources */,
+				FA900E281C08EBBA00AA1220 /* CurrencyExchangeRate.swift in Sources */,
+				FA900E351C09186300AA1220 /* MoneyDecimalNumber.swift in Sources */,
+				FA900E2F1C09091F00AA1220 /* CurrencyExchangeRateImplementation.swift in Sources */,
+				FA900E261C08E9C100AA1220 /* Currency.swift in Sources */,
+				FA900E311C09093600AA1220 /* MoneyImplementation.swift in Sources */,
+				FA900E241C08423E00AA1220 /* Money.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA900E191C0841BA00AA1220 /* MoneyTests.swift in Sources */,
+				FA900E191C0841BA00AA1220 /* HawkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		FA900E161C0841BA00AA1220 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA900E081C0841BA00AA1220 /* Money */;
+			target = FA900E081C0841BA00AA1220 /* Hawk */;
 			targetProxy = FA900E151C0841BA00AA1220 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -305,36 +345,76 @@
 		FA900E1E1C0841BA00AA1220 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Money/Info.plist;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				INFOPLIST_FILE = Hawk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adamkuipers.Money;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamkuipers.Hawk;
+				PRODUCT_NAME = Hawk;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FA900E1F1C0841BA00AA1220 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Money/Info.plist;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				INFOPLIST_FILE = Hawk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adamkuipers.Money;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamkuipers.Hawk;
+				PRODUCT_NAME = Hawk;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -345,7 +425,7 @@
 				INFOPLIST_FILE = MoneyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamkuipers.MoneyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hawk;
 			};
 			name = Debug;
 		};
@@ -356,14 +436,14 @@
 				INFOPLIST_FILE = MoneyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamkuipers.MoneyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hawk;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA900E031C0841BA00AA1220 /* Build configuration list for PBXProject "Money" */ = {
+		FA900E031C0841BA00AA1220 /* Build configuration list for PBXProject "Hawk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA900E1B1C0841BA00AA1220 /* Debug */,
@@ -372,21 +452,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA900E1D1C0841BA00AA1220 /* Build configuration list for PBXNativeTarget "Money" */ = {
+		FA900E1D1C0841BA00AA1220 /* Build configuration list for PBXNativeTarget "Hawk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA900E1E1C0841BA00AA1220 /* Debug */,
 				FA900E1F1C0841BA00AA1220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		FA900E201C0841BA00AA1220 /* Build configuration list for PBXNativeTarget "MoneyTests" */ = {
+		FA900E201C0841BA00AA1220 /* Build configuration list for PBXNativeTarget "HawkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA900E211C0841BA00AA1220 /* Debug */,
 				FA900E221C0841BA00AA1220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
