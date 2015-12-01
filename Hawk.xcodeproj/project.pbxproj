@@ -87,13 +87,10 @@
 		FA900E0B1C0841BA00AA1220 /* Hawk */ = {
 			isa = PBXGroup;
 			children = (
+				FA9F48381C0D5FAC00788F41 /* API */,
 				FA900E2B1C09039F00AA1220 /* Implementations */,
 				FA900E0E1C0841BA00AA1220 /* Info.plist */,
 				FA900E0C1C0841BA00AA1220 /* Hawk.h */,
-				FA900E251C08E9C100AA1220 /* Currency.swift */,
-				FA900E271C08EBBA00AA1220 /* CurrencyExchangeRate.swift */,
-				FA900E231C08423E00AA1220 /* Money.swift */,
-				FA900E321C09116900AA1220 /* UnderlyingMoneyRepresentation.swift */,
 			);
 			path = Hawk;
 			sourceTree = "<group>";
@@ -116,6 +113,17 @@
 				FA900E341C09186300AA1220 /* MoneyDecimalNumber.swift */,
 			);
 			path = Implementations;
+			sourceTree = "<group>";
+		};
+		FA9F48381C0D5FAC00788F41 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA900E251C08E9C100AA1220 /* Currency.swift */,
+				FA900E271C08EBBA00AA1220 /* CurrencyExchangeRate.swift */,
+				FA900E231C08423E00AA1220 /* Money.swift */,
+				FA900E321C09116900AA1220 /* UnderlyingMoneyRepresentation.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
