@@ -11,7 +11,6 @@ public protocol MoneyType: Comparable {
   typealias MoneyRepresentation: UnderlyingMoneyRepresentation
 
   prefix func - (rhs: Self) -> Self
-
   func + (lhs: Self, rhs: Self) -> Self
   func - (lhs: Self, rhs: Self) -> Self
   func * (lhs: Self, rhs: MoneyRepresentation) -> Self

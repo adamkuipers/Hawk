@@ -106,8 +106,8 @@
 			children = (
 				FA900E2C1C0903CC00AA1220 /* Currencies.swift */,
 				FA900E2E1C09091F00AA1220 /* CurrencyExchangeRateImplementation.swift */,
-				FA900E301C09093600AA1220 /* MoneyImplementation.swift */,
 				FA900E341C09186300AA1220 /* MoneyDecimalNumber.swift */,
+				FA900E301C09093600AA1220 /* MoneyImplementation.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";

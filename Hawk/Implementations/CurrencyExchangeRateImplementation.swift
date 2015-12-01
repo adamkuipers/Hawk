@@ -6,7 +6,8 @@
 //  Copyright © 2015 Adam Kuipers. All rights reserved.
 //
 
-public struct CurrencyExchangeRate<Base: MoneyType, Counter: MoneyType where Base.MoneyRepresentation == Counter.MoneyRepresentation>: CurrencyExchangeRateType {
+public struct CurrencyExchangeRate<Base: MoneyType, Counter: MoneyType
+where Base.MoneyRepresentation == Counter.MoneyRepresentation>: CurrencyExchangeRateType {
   public let base: Base
   public let counter: Counter
 
