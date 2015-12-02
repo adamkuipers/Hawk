@@ -8,7 +8,7 @@
 
 public protocol MoneyType: Comparable {
   typealias Currency: CurrencyType
-  typealias MoneyRepresentation: UnderlyingMoneyRepresentation
+  typealias MoneyRepresentation: UnderlyingMoneyRepresentationType
 
   prefix func - (rhs: Self) -> Self
   func + (lhs: Self, rhs: Self) -> Self

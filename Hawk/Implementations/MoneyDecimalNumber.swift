@@ -20,13 +20,11 @@ public struct MoneyDecimalNumber {
   }
 }
 
-// MARK: UnderlyingMoneyRepresentation
+// MARK: - UnderlyingMoneyRepresentation
 
-extension MoneyDecimalNumber: UnderlyingMoneyRepresentation {
+extension MoneyDecimalNumber: UnderlyingMoneyRepresentationType {
   public static let zero: MoneyDecimalNumber = MoneyDecimalNumber(.zero())
 }
-
-// MARK: - Arithmetic Operators
 
 public func + (lhs: MoneyDecimalNumber, rhs: MoneyDecimalNumber) -> MoneyDecimalNumber {
   return MoneyDecimalNumber(lhs.decimalNumber.decimalNumberByAdding(rhs.decimalNumber))

@@ -6,7 +6,7 @@
 //  Copyright © 2015 Adam Kuipers. All rights reserved.
 //
 
-public protocol UnderlyingMoneyRepresentation: Comparable {
+public protocol UnderlyingMoneyRepresentationType: Comparable {
   init(double: Double)
 
   func - (lhs: Self, rhs: Self) -> Self
