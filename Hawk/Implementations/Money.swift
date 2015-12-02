@@ -12,12 +12,16 @@ public struct Money<C: CurrencyType>: MoneyType {
 
   private let amount: MoneyDecimalNumber
 
+  init(_ amount: MoneyDecimalNumber) {
+    self.amount = amount
+  }
+
   public static var zero: Money {
-    return Money(amount: MoneyDecimalNumber(double: 0))
+    return Money(MoneyDecimalNumber(double: 0))
   }
 
   public static var unit: Money {
-    return Money(amount: MoneyDecimalNumber(double: Currency.unit))
+    return Money(MoneyDecimalNumber(double: Currency.unit))
   }
 }
 
@@ -32,23 +36,23 @@ public func < <Currency: CurrencyType>(lhs: Money<Currency>, rhs: Money<Currency
 }
 
 public prefix func - <Currency: CurrencyType>(rhs: Money<Currency>) -> Money<Currency> {
-  return Money(amount: .zero - rhs.amount)
+  return Money(.zero - rhs.amount)
 }
 
 public func + <Currency: CurrencyType>(lhs: Money<Currency>, rhs: Money<Currency>) -> Money<Currency> {
-  return Money(amount: lhs.amount + rhs.amount)
+  return Money(lhs.amount + rhs.amount)
 }
 
 public func - <Currency: CurrencyType>(lhs: Money<Currency>, rhs: Money<Currency>) -> Money<Currency> {
-  return Money(amount: lhs.amount - rhs.amount)
+  return Money(lhs.amount - rhs.amount)
 }
 
 public func * <Currency: CurrencyType>(lhs: Money<Currency>, rhs: MoneyDecimalNumber) -> Money<Currency> {
-  return Money(amount: lhs.amount * rhs)
+  return Money(lhs.amount * rhs)
 }
 
 public func / <Currency: CurrencyType>(lhs: Money<Currency>, rhs: MoneyDecimalNumber) -> Money<Currency> {
-  return Money(amount: lhs.amount / rhs)
+  return Money(lhs.amount / rhs)
 }
 
 public func / <Currency: CurrencyType>(lhs: Money<Currency>, rhs: Money<Currency>) -> MoneyDecimalNumber {
