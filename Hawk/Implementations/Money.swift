@@ -10,9 +10,9 @@ public struct Money<C: CurrencyType>: MoneyType {
   public typealias Currency = C
   public typealias MoneyRepresentation = MoneyDecimalNumber
 
-  private let amount: MoneyDecimalNumber
+  let amount: MoneyDecimalNumber
 
-  init(_ amount: MoneyDecimalNumber) {
+  public init(_ amount: MoneyDecimalNumber) {
     self.amount = amount
   }
 
