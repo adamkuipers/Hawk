@@ -4,4 +4,7 @@
    <FileRef
       location = "group:Hawk.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/SwiftCheck/SwiftCheck.xcodeproj">
+   </FileRef>
 </Workspace>
