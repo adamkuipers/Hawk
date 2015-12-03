@@ -147,8 +147,7 @@
 				FA900E341C09186300AA1220 /* MoneyDecimalNumber.swift */,
 				FA900E301C09093600AA1220 /* Money.swift */,
 			);
-			name = Core;
-			path = Implementations;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		FA9F48381C0D5FAC00788F41 /* API */ = {
@@ -167,8 +166,7 @@
 			children = (
 				FAB496761C0EB49A00751A02 /* MoneyTests.swift */,
 			);
-			name = Core;
-			path = Implementations;
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
