@@ -34,7 +34,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FA900E121C0841BA00AA1220"
-               BuildableName = "Hawk.xctest"
+               BuildableName = "HawkTests.xctest"
                BlueprintName = "HawkTests"
                ReferencedContainer = "container:Hawk.xcodeproj">
             </BuildableReference>

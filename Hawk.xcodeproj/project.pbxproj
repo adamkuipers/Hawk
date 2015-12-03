@@ -57,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA1073BA1C0FF2D100CA6FE7 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		FA1192BF1C0D7DF70056AAD6 /* SwiftCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCheck.framework; path = Carthage/Build/Mac/SwiftCheck.framework; sourceTree = "<group>"; };
 		FA1192C21C0D7F440056AAD6 /* SwiftCheck.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftCheck.framework.dSYM; path = Carthage/Build/Mac/SwiftCheck.framework.dSYM; sourceTree = "<group>"; };
 		FA900E091C0841BA00AA1220 /* Hawk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hawk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +100,7 @@
 		FA900DFF1C0841BA00AA1220 = {
 			isa = PBXGroup;
 			children = (
+				FA1073BA1C0FF2D100CA6FE7 /* MyPlayground.playground */,
 				FA1192C21C0D7F440056AAD6 /* SwiftCheck.framework.dSYM */,
 				FA1192BF1C0D7DF70056AAD6 /* SwiftCheck.framework */,
 				FA900E0B1C0841BA00AA1220 /* Hawk */,
@@ -120,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				FA9F48381C0D5FAC00788F41 /* API */,
-				FA900E2B1C09039F00AA1220 /* Implementations */,
+				FA900E2B1C09039F00AA1220 /* Core */,
 				FA900E0E1C0841BA00AA1220 /* Info.plist */,
 				FA900E0C1C0841BA00AA1220 /* Hawk.h */,
 			);
@@ -130,14 +132,14 @@
 		FA900E171C0841BA00AA1220 /* HawkTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAB496741C0EB23A00751A02 /* Implementations */,
+				FAB496741C0EB23A00751A02 /* Core */,
 				FA900E1A1C0841BA00AA1220 /* Info.plist */,
 				FAB496751C0EB49900751A02 /* HawkTests-Bridging-Header.h */,
 			);
 			path = HawkTests;
 			sourceTree = "<group>";
 		};
-		FA900E2B1C09039F00AA1220 /* Implementations */ = {
+		FA900E2B1C09039F00AA1220 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				FA900E2C1C0903CC00AA1220 /* Currencies.swift */,
@@ -145,6 +147,7 @@
 				FA900E341C09186300AA1220 /* MoneyDecimalNumber.swift */,
 				FA900E301C09093600AA1220 /* Money.swift */,
 			);
+			name = Core;
 			path = Implementations;
 			sourceTree = "<group>";
 		};
@@ -159,11 +162,12 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		FAB496741C0EB23A00751A02 /* Implementations */ = {
+		FAB496741C0EB23A00751A02 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				FAB496761C0EB49A00751A02 /* MoneyTests.swift */,
 			);
+			name = Core;
 			path = Implementations;
 			sourceTree = "<group>";
 		};
