@@ -33,8 +33,10 @@ final class MoneyTests: XCTestCase {
       usdFromDouble(value) * number == Money(MoneyDecimalNumber(double: value) * MoneyDecimalNumber(double: number))
     }
 
-    property("Multiplication is commutative") <- forAll { (value: Double, number: Double) in
-      usdFromDouble(value) * number == number * usdFromDouble(value)
+    property("Multiplication is commutative") <- forAll { (money: Money<USD>, number: Double) in
+      let moneyDecimalProduct = money * MoneyDecimalNumber(double: number) == MoneyDecimalNumber(double: number) * money
+      let doubleProduct = money * number == number * money
+      return doubleProduct && moneyDecimalProduct
     }
 
     property("Multiplication identity property holds") <- forAll { (number: Double) in
@@ -84,6 +86,12 @@ final class MoneyTests: XCTestCase {
     property("Less than relationship corresponds to the same in the underlying rep.") <- forAll { (money1: Money<USD>, money2: Money<USD>) in
       money1 < money2 ==>
         money1.amount.decimalNumber.doubleValue < money2.amount.decimalNumber.doubleValue
+    }
+  }
+
+  func testAbsoluteValue() {
+    property("Absolute value always results in a positibe number") <- forAll { (value: Double) in
+      usdFromDouble(value).absoluteValue() == usdFromDouble(abs(value))
     }
   }
 }
