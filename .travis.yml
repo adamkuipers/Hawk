@@ -1,8 +1,7 @@
 language: objective-c
 xcode_project: Hawk.xcodeproj # path to your xcodeproj folder
 xcode_scheme: Hawk
-before_install:
-  - brew update
-  - brew upgrade xctool
-  - brew install carthage
-  - carthage bootstrap
+osx_image: xcode7.1
+before_install: true
+install: true
+script: BUILD_TOOL=xctool script/cibuild
