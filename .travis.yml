@@ -1,7 +1,5 @@
 language: objective-c
+osx_image: xcode7.1
 xcode_workspace: Hawk.xcworkspace
 xcode_scheme: Hawk
-osx_image: xcode7.1
-before_install: true
-install: true
-script: BUILD_TOOL=xctool script/cibuild
+script: script/cibuild
