@@ -20,20 +20,6 @@
                ReferencedContainer = "container:Hawk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "844FCC8C198B320500EB242A"
-               BuildableName = "SwiftCheck.framework"
-               BlueprintName = "SwiftCheck"
-               ReferencedContainer = "container:Carthage/Checkouts/SwiftCheck/SwiftCheck.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
