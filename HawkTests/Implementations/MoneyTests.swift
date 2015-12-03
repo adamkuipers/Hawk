@@ -23,25 +23,29 @@ extension Money: Arbitrary {
   }
 }
 
+private func usdFromDouble(value: Double) -> Money<USD> {
+  return Money(double: value)
+}
+
 final class MoneyTests: XCTestCase {
   func testMultiplication() {
-    property("Multiplication scales money correctly") <- forAll { (money: Money<USD>, number: Double) in
-      money * number == Money(money.amount * MoneyDecimalNumber(double: number))
+    property("Multiplication scales money correctly") <- forAll { (value: Double, number: Double) in
+      usdFromDouble(value) * number == Money(MoneyDecimalNumber(double: value) * MoneyDecimalNumber(double: number))
     }
 
-    property("Multiplication is commutative") <- forAll { (money: Money<USD>, number: Double) in
-      money * number == number * money
+    property("Multiplication is commutative") <- forAll { (value: Double, number: Double) in
+      usdFromDouble(value) * number == number * usdFromDouble(value)
     }
 
     property("Multiplication identity property holds") <- forAll { (number: Double) in
-      Money<USD>.unit * number == Money(MoneyDecimalNumber(double: number))
+      .unit * number == usdFromDouble(number)
     }
   }
 
   func testDivision() {
-    property("Division scales money correctly") <- forAll { (money: Money<USD>, number: Double) in
-      number > 0 ==>
-        money / number == Money(money.amount / MoneyDecimalNumber(double: number))
+    property("Division scales money correctly") <- forAll { (value: Double, number: Double) in
+      number != 0 ==>
+        usdFromDouble(value) / number == Money(MoneyDecimalNumber(double: value) / MoneyDecimalNumber(double: number))
     }
 
     property("Unit eliminating division scales underlying representation correctly") <- forAll { (money1: Money<USD>, money2: Money<USD>) in

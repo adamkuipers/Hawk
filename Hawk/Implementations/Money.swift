@@ -10,7 +10,11 @@ public struct Money<C: CurrencyType>: MoneyType {
   public typealias Currency = C
   public typealias MoneyRepresentation = MoneyDecimalNumber
 
-  let amount: MoneyDecimalNumber
+  internal let amount: MoneyDecimalNumber
+
+  public init(double: Double) {
+    self.init(MoneyDecimalNumber(double: double))
+  }
 
   public init(_ amount: MoneyDecimalNumber) {
     self.amount = amount
@@ -27,34 +31,42 @@ public struct Money<C: CurrencyType>: MoneyType {
 
 // MARK: - Arithmentic Operators
 
+@warn_unused_result
 public func == <Currency: CurrencyType>(lhs: Money<Currency>, rhs: Money<Currency>) -> Bool {
   return lhs.amount == rhs.amount
 }
 
+@warn_unused_result
 public func < <Currency: CurrencyType>(lhs: Money<Currency>, rhs: Money<Currency>) -> Bool {
   return lhs.amount < rhs.amount
 }
 
+@warn_unused_result
 public prefix func - <Currency: CurrencyType>(rhs: Money<Currency>) -> Money<Currency> {
   return Money(.zero - rhs.amount)
 }
 
+@warn_unused_result
 public func + <Currency: CurrencyType>(lhs: Money<Currency>, rhs: Money<Currency>) -> Money<Currency> {
   return Money(lhs.amount + rhs.amount)
 }
 
+@warn_unused_result
 public func - <Currency: CurrencyType>(lhs: Money<Currency>, rhs: Money<Currency>) -> Money<Currency> {
   return Money(lhs.amount - rhs.amount)
 }
 
+@warn_unused_result
 public func * <Currency: CurrencyType>(lhs: Money<Currency>, rhs: MoneyDecimalNumber) -> Money<Currency> {
   return Money(lhs.amount * rhs)
 }
 
+@warn_unused_result
 public func / <Currency: CurrencyType>(lhs: Money<Currency>, rhs: MoneyDecimalNumber) -> Money<Currency> {
   return Money(lhs.amount / rhs)
 }
 
+@warn_unused_result
 public func / <Currency: CurrencyType>(lhs: Money<Currency>, rhs: Money<Currency>) -> MoneyDecimalNumber {
   return lhs.amount / rhs.amount
 }

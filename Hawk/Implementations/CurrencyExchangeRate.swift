@@ -16,10 +16,12 @@ where Base.MoneyRepresentation == Counter.MoneyRepresentation>: CurrencyExchange
     self.counter = counter
   }
 
+  @warn_unused_result
   public func convert(base: Base) -> Counter {
     return counter * (base / self.base)
   }
 
+  @warn_unused_result
   public func convert(counter: Counter) -> Base {
     return base * (counter / self.counter)
   }

@@ -15,7 +15,7 @@ public struct MoneyDecimalNumber {
     self.init(NSDecimalNumber(double: double))
   }
 
-  init(_ decimalNumber: NSDecimalNumber) {
+  internal init(_ decimalNumber: NSDecimalNumber) {
     self.decimalNumber = decimalNumber
   }
 }
@@ -26,26 +26,32 @@ extension MoneyDecimalNumber: UnderlyingMoneyRepresentationType {
   public static let zero: MoneyDecimalNumber = MoneyDecimalNumber(.zero())
 }
 
+@warn_unused_result
 public func + (lhs: MoneyDecimalNumber, rhs: MoneyDecimalNumber) -> MoneyDecimalNumber {
   return MoneyDecimalNumber(lhs.decimalNumber.decimalNumberByAdding(rhs.decimalNumber))
 }
 
+@warn_unused_result
 public func - (lhs: MoneyDecimalNumber, rhs: MoneyDecimalNumber) -> MoneyDecimalNumber {
   return MoneyDecimalNumber(lhs.decimalNumber.decimalNumberBySubtracting(rhs.decimalNumber))
 }
 
+@warn_unused_result
 public func * (lhs: MoneyDecimalNumber, rhs: MoneyDecimalNumber) -> MoneyDecimalNumber {
   return MoneyDecimalNumber(lhs.decimalNumber.decimalNumberByMultiplyingBy(rhs.decimalNumber))
 }
 
+@warn_unused_result
 public func / (lhs: MoneyDecimalNumber, rhs: MoneyDecimalNumber) -> MoneyDecimalNumber {
   return MoneyDecimalNumber(lhs.decimalNumber.decimalNumberByDividingBy(rhs.decimalNumber))
 }
 
+@warn_unused_result
 public func == (lhs: MoneyDecimalNumber, rhs: MoneyDecimalNumber) -> Bool {
   return lhs.decimalNumber.isEqualToNumber(rhs.decimalNumber)
 }
 
+@warn_unused_result
 public func < (lhs: MoneyDecimalNumber, rhs: MoneyDecimalNumber) -> Bool {
   return lhs.decimalNumber.compare(rhs.decimalNumber) == .OrderedAscending
 }
