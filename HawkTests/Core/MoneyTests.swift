@@ -6,35 +6,23 @@
 //  Copyright © 2015 Adam Kuipers. All rights reserved.
 //
 
+@testable import Hawk
+
 import XCTest
 import SwiftCheck
 
-@testable import Hawk
-
-extension Money: Arbitrary {
-  public static var arbitrary: Gen<Money> {
-    return Double.arbitrary.fmap { Money(MoneyDecimalNumber(double: $0)) }
-  }
-
-  public static func shrink(money: Money) -> [Money] {
-    return Double.shrink(money.amount.decimalNumber.doubleValue).map { double in
-      Money(MoneyDecimalNumber(double: double))
-    }
-  }
-}
-
 private func usdFromDouble(value: Double) -> Money<USD> {
-  return Money(double: value)
+  return Money(value)
 }
 
 final class MoneyTests: XCTestCase {
   func testMultiplication() {
     property("Multiplication scales money correctly") <- forAll { (value: Double, number: Double) in
-      usdFromDouble(value) * number == Money(MoneyDecimalNumber(double: value) * MoneyDecimalNumber(double: number))
+      usdFromDouble(value) * number == Money(MoneyDecimalNumber(value) * MoneyDecimalNumber(number))
     }
 
     property("Multiplication is commutative") <- forAll { (money: Money<USD>, number: Double) in
-      let moneyDecimalProduct = money * MoneyDecimalNumber(double: number) == MoneyDecimalNumber(double: number) * money
+      let moneyDecimalProduct = money * MoneyDecimalNumber(number) == MoneyDecimalNumber(number) * money
       let doubleProduct = money * number == number * money
       return doubleProduct && moneyDecimalProduct
     }
@@ -47,7 +35,7 @@ final class MoneyTests: XCTestCase {
   func testDivision() {
     property("Division scales money correctly") <- forAll { (value: Double, number: Double) in
       number != 0 ==>
-        usdFromDouble(value) / number == Money(MoneyDecimalNumber(double: value) / MoneyDecimalNumber(double: number))
+        usdFromDouble(value) / number == Money(MoneyDecimalNumber(value) / MoneyDecimalNumber(number))
     }
 
     property("Unit eliminating division scales underlying representation correctly") <- forAll { (money1: Money<USD>, money2: Money<USD>) in

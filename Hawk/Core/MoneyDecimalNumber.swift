@@ -11,7 +11,7 @@ import Foundation
 public struct MoneyDecimalNumber {
   let decimalNumber: NSDecimalNumber
 
-  public init(double: Double) {
+  public init(_ double: Double) {
     self.init(NSDecimalNumber(double: double))
   }
 

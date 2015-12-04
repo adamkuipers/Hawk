@@ -7,7 +7,9 @@
 //
 
 public protocol CurrencyType {
+  /// ISO 4217 Currency code.
   static var code: String { get }
+
   static var formatDecimals: Int { get }
   static var name: String { get }
   static var symbol: String { get }

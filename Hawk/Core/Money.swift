@@ -6,14 +6,14 @@
 //  Copyright © 2015 Adam Kuipers. All rights reserved.
 //
 
-public struct Money<C: CurrencyType>: MoneyType {
-  public typealias Currency = C
+public struct Money<Currency: CurrencyType>: MoneyType {
+  public typealias UnderlyingCurrency = Currency
   public typealias MoneyRepresentation = MoneyDecimalNumber
 
   internal let amount: MoneyDecimalNumber
 
-  public init(double: Double) {
-    self.init(MoneyDecimalNumber(double: double))
+  public init(_ double: Double) {
+    self.init(MoneyDecimalNumber(double))
   }
 
   public init(_ amount: MoneyDecimalNumber) {
@@ -21,11 +21,11 @@ public struct Money<C: CurrencyType>: MoneyType {
   }
 
   public static var zero: Money {
-    return Money(MoneyDecimalNumber(double: 0))
+    return Money(0)
   }
 
   public static var unit: Money {
-    return Money(MoneyDecimalNumber(double: Currency.unit))
+    return Money(Currency.unit)
   }
 }
 

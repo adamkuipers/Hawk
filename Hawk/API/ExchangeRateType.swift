@@ -6,7 +6,7 @@
 //  Copyright © 2015 Adam Kuipers. All rights reserved.
 //
 
-public protocol CurrencyExchangeRateType {
+public protocol ExchangeRateType {
   typealias Base: MoneyType
   typealias Counter: MoneyType
 

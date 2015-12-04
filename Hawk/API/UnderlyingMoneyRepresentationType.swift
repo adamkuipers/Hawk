@@ -7,7 +7,7 @@
 //
 
 public protocol UnderlyingMoneyRepresentationType: Comparable {
-  init(double: Double)
+  init(_: Double)
 
   func - (lhs: Self, rhs: Self) -> Self
   func + (lhs: Self, rhs: Self) -> Self

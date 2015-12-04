@@ -7,6 +7,7 @@
 //
 
 public protocol MoneyType: Comparable {
+  typealias UnderlyingCurrency: CurrencyType
   typealias MoneyRepresentation: UnderlyingMoneyRepresentationType
 
   prefix func - (rhs: Self) -> Self
@@ -35,13 +36,13 @@ public func * <M: MoneyType>(lhs: M.MoneyRepresentation, rhs: M) -> M {
 }
 
 public func * <M: MoneyType>(lhs: M, rhs: Double) -> M {
-  return lhs * M.MoneyRepresentation(double: rhs)
+  return lhs * M.MoneyRepresentation(rhs)
 }
 
 public func * <M: MoneyType>(lhs: Double, rhs: M) -> M {
-  return rhs * M.MoneyRepresentation(double: lhs)
+  return rhs * M.MoneyRepresentation(lhs)
 }
 
 public func / <M: MoneyType>(lhs: M, rhs: Double) -> M {
-  return lhs / M.MoneyRepresentation(double: rhs)
+  return lhs / M.MoneyRepresentation(rhs)
 }
